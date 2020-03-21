@@ -1,5 +1,4 @@
 const express = require('express');
-const data = require('./data.json');
 const app = express();
 
 //sets the view engine as pug for render requests
@@ -9,7 +8,7 @@ app.set('view engine', 'pug');
 //serve static files
 app.use('/static', express.static('public'));
 
-//serves routes  -----  -- - mus create /routes - - - - - - - -
+//serves routes 
 const routes = require('./routes');
 //uses the routes imported from the routes file & index.js contained within
 app.use(routes);

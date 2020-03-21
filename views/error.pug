@@ -1,5 +1,7 @@
 extends layout.pug
 block content
   h1 There's been an error
-  h2 The page cannot be found
+  h2 The page cannot be loaded
   h3= err.message
+  p=err.status
+  p=err.stack
